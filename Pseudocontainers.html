@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Containers and Selectors</title>
+    <style>
+        .container{
+            border:2px solid red;
+            background-color: blanchedalmond;
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+
+        }
+ 
+        a{
+            text-decoration:none;
+            color:white;
+        }
+
+        a:hover{
+            color:black;
+            background-color: white;
+        }
+
+        a:visited{
+            background-color:rgb(252, 255, 60);
+        }
+
+        .btn{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color: rgb(130, 241, 78);
+            padding:6px;
+            border:none;
+            cursor:pointer;
+            font-size:14px;
+            border-radius:10px;
+        }
+
+        .btn:hover{
+            color:gold;
+            background-color: black;
+            border:2px solid gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="count1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sint quam quod eum cumque ducimus facilis hic earum nesciunt eius tenetur non, qui quas! Modi, dolores totam? Fuga non facilis reprehenderit dignissimos recusandae. Magni.  </p>
+        <a href="https://zomato.com" class="btn">Read More</a>
+        <button class="btn">Contact Us</button>
+    </div>
+</body>
+</html>

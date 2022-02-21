@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        *{
+
+        }
+
+        .container{
+            width:900px;
+            border:3px solid blue;
+            margin: 33px auto;
+        }
+        .item{
+            border:3px solid greenyellow;
+            margin: 12px 3px;
+            padding:12px 3px;
+            background-color: rgb(248, 165, 88);
+        }
+        #fruit{
+            float:left;
+            width:48%
+        }
+
+        #computer{
+            float:right;
+            width:48%
+        }
+
+        #stationary{
+            /* float:left; */
+            clear:both;                   /* Clears region. Cna give both,left,right. */
+            width:98%
+        }
+
+        p, h1{
+       /* text-align: right;
+        text-align: left;
+        text-align: center; */
+        text-align: justify;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1> Welcome to My Strore </h1>         <!-- This is not in container hece will be visible outside-->
+    <div class="container">
+        <h1> Store List </h1>               <!-- This is inside container hece will be shown inside the box-->
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cumque veniam corrupti nihil tenetur labore rem deserunt fugiat perspiciatis ipsam a, quos recusandae obcaecati voluptatibus quam quas neque autem quibusdam reprehenderit eligendi praesentium vel.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cumque veniam corrupti nihil tenetur labore rem deserunt fugiat perspiciatis ipsam a, quos recusandae obcaecati voluptatibus quam quas neque autem quibusdam reprehenderit eligendi praesentium vel.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cumque veniam corrupti nihil tenetur labore rem deserunt fugiat perspiciatis ipsam a, quos recusandae obcaecati voluptatibus quam quas neque autem quibusdam reprehenderit eligendi praesentium vel.</p>
+        </div>
+        <div id="glasses" class="item">
+            <h3>Glasses</h3>
+            <p id="glassespara" class="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cumque veniam corrupti nihil tenetur labore rem deserunt fugiat perspiciatis ipsam a, quos recusandae obcaecati voluptatibus quam quas neque autem quibusdam reprehenderit eligendi praesentium vel.</p>
+        </div>
+
+    </div>
+    
+</body>
+</html>
