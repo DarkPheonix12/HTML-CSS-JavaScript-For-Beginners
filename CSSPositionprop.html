@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: rgb(250, 182, 173);
+        }
+        /* CSS Positions: Static(static), Relative, Absolute, Fixed, Sticky  */
+        .box {
+            display: inline-block;
+            /* Boxes come in one line rather being one above other*/
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+
+        #box3 {
+            /* relative:relative to its normal position and will leave a gapat its normal position */
+            /* absolute: relative to its the position of its first parent*/
+
+            position: absolute;
+            top: 34px;
+            left: 134px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">                                        <!--Parent of all the blocks-->
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>                            
+    </div>
+</body>
+
+</html>
