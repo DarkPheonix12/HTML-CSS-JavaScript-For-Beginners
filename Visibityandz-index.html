@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visiblity and Z-index</title>
+    <style>                            /*z-index only work for positioned elements(sticky,absolute....) not for static elements*/
+        .box{
+            height:170px;
+            width:170px;
+            border:2px solid black;
+        }
+        #box1{
+            position: relative;
+            top:49px;
+            z-index:34;
+            background-color:lemonchiffon;
+        }
+        #box2{
+            position:absolute;
+            top:14px;
+            z-index:35;
+            background-color:red;
+        }
+        #box3{
+            /*display:none;*/                       /*This removes visiblity but does not reserves space for it*/
+            /*visibility:hidden;*/                  /*This makes the block disapper but keeps it space reserved*/ 
+            background-color:blueviolet;
+        }
+        #box4{
+            background-color:pink;
+        }
+    </style>
+</head>
+<body>                                                <!--div.box#box$*4 -- here $ will produce cerial numbers to all the box ids produced-->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>
