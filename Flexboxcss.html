@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tutorial</title>
+    <style>
+        .container {
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            display:flex;                           /*To use Flexbox we have to use display;flex this will make vertical columns instead of horizontal blocks*/
+
+                /* Flex Properties for Container */
+                flex-direction: row;                      /*Row is default*/
+                /* flex-direction: column;
+                flex-direction: row-reverse;
+                flex-direction: column-reverse; */
+
+                flex-wrap: wrap;                    /*No wrap is default -- This helps to make responsive designs that can be used in phones and tabs as well*/
+                flex-wrap: wrap-reverse;            /*Wraps in reverse form*/
+
+                /* flex-flow: row-reverse; */       /*This works as short-cut which performs task for both direction and wrap*/
+
+                justify-content: center;            /*This aligns the columns in centre and keeps it aligned even when display size changes */ 
+                justify-content: space-between;     /*This creates space between the coulumns but not at the end or parent container and column*/ 
+                justify-content: space-evenly;      /*This creates even space between columns as well as the parent container*/
+                justify-content: space-around;      /*This creates even padding kind of space around a single block, this reduces space between parent container and column but increases space beween 2 consecutive columns */
+
+                align-items: center;            /*This aligns the columns vertically center alignment(a big challenge)*/
+                /*align-items: flex-end;*/              /*This aligns the content columns at lower end of the parent container*/        
+                /*align-items: flex-start;*/            /*This is default*/    
+                /*align-items: stretch;*/               /*This helps when coulmns are in rectange and screen size changes, it maintains horzontal distance between columns */
+        }
+
+        .item{
+            width:200px;
+            height:200px;
+            background-color: peachpuff;
+            border: 2px solid rgb(114, 154, 241);
+            margin:10px;
+            padding:3px;
+        }
+        /* Flex Properties for Flex items */
+        /* ORDER: More the value of the order of the item later the value will be shown */
+        /*FLEX-GROW: When size of the screen changer then the growth of column will depend on the value (growth is directly proportional to the value)*/
+        /*FLEX-SHRINK: When the screen size shrinks the value decides how much a column will shrink*/
+        /*FLEX-BASIS: When flex-direction is set to column, flex-basis will control height*/
+        /*FLEX-BASIS: When flex-direction is set to row, flex-basis will control width*/
+        /*ALIGN-SELF: Aligns the item in vertical order even if they are arranged horizontaly and is used only for 1 single item*/
+        #item1{
+            order:5;
+            flex-grow:3;
+            flex-shrink:5;
+            flex-basis: 200px;          /*This will not make any change as the real value is also 200px*/
+        }
+        #item2{
+            order:3;
+            flex-grow:2;
+            flex-shrink:7;
+            flex-basis: 120px;
+
+            align-self: flex-end;                  /*Vertically aligns the item */
+        }
+        #item3{
+            order:1;
+            flex-grow:4;
+            flex-shrink:2;
+            flex-basis: 230px;
+
+            align-self: flex-start;
+        }
+        #item4{
+            order:6;
+            flex-grow:1;
+            flex-shrink:4;
+            flex-basis: 210px;
+
+            align-self: center;
+        }
+        #item5{
+            order:4;
+            flex-grow:6;
+            flex-shrink:7;
+            flex-basis: 250px;
+        }
+        #item6{
+            order:2;
+            flex-grow:5;
+            flex-shrink:3;
+            flex-basis: 180px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is Flexbox</h1>
+    <div class="container">
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item2">Second Box</div>
+        <div class="item" id="item3">Third Box</div>
+        <div class="item" id="item4">Fourth Box</div>
+        <div class="item" id="item5">Fifth Box</div>
+        <div class="item" id="item6">Sixth Box</div>
+    </div>
+</body>
+
+</html>
