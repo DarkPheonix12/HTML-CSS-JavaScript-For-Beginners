@@ -13,8 +13,14 @@
             text-align: center;
         }
 
-        div p{
+        div p{                                    /* For all <p> in inside <div> either directly or indirectly */
             color: cornflowerblue;
+            font-weight: bold;
+        }
+
+        div > p{                                  /*For <p> in <din> only directly*/
+            color: rgb(243, 85, 64);
+            background-color: cadetblue;
             font-weight: bold;
         }
     </style>
@@ -23,6 +29,10 @@
    <h1>This is more on selctors</h1> 
    <div class="container">
        <div class="row">
+           <ul>
+               <li class="item"><p>Thsi is another paragraph inside li</p></li>
+               <li>This will not get affected</li>
+           </ul>
            <p>This is a paragraph</p>
        </div>
        <p>This is another paragraph</p>
