@@ -3,61 +3,45 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Attribute and nth child pseudo selectors</title>
+    <title>Attributes and nth child pseudocodes</title>
     <style>
-        .container {
+        .container{
             display: block;
             width: 233px;
             margin: auto;
         }
-
-        input {
+        input{
             display: block;
         }
-
-        input[type='text'] {
-            padding: 23px;
-            border: 2px solid red;
+        input [type='text']{
+            padding:23px;
+            border: 2px solid blueviolet;
         }
-
-        a[target] {
-            font-size: 44px;
-            color: violet;
+        a[target]{                                              /* [target] and [target="_self"] are pseudo selecvtors */
+            font-size: 35px;
+            color: deepskyblue;
         }
-
-        a[target='_self'] {
-            font-size: 14px;
-            color: rgb(13, 22, 151);
+        a[target='_self']{
+            font-size: 24px;
+            color:tomato;
         }
-
-        input[type='email'] {
-            color: yellow;
-            border: 4px solid black;
+        input[type='email']{
+            color:aqua;
+            border: 4px solid rgb(121, 252, 69);
         }
-
-        /* This will apply css for third child */
-        /* li:nth-child(3){
-        color: cyan;
-    }
-
-    li:nth-child(2n+0){
-        color: red;
-    } */
-
-        li:nth-child(3n+3) {
-            color: red;
+        li:nth-child(3){                                  /* This will apply CSS to the 3rd child */
+            color:forestgreen;
         }
-
-        /* Odd child */
-        /* li:nth-child(odd){
-        background-color: yellow;
-    } */
-
-        /* Even child */
-        li:nth-child(even) {
-            background-color: yellow;
+        li:nth-child(2n+0){                               /* This will apply CSS to all the child multiple of 2 */
+            color:mediumslateblue;
+        }
+        li:nth-child(even){                               /* This will apply CSS to all the odd childs */
+            background-color:peachpuff;
+        }
+        li:nth-child(odd){                                /* This will apply CSS to all the even childs */
+            background-color:silver;
         }
     </style>
 </head>
@@ -65,24 +49,26 @@
 <body>
     <div class="container">
         <h1><a href="http://google.com" target="_blank">Go to google</a></h1>
-        <h1><a href="http://facebook.com" target="_self">Go to Facebook</a></h1>
-        <form action="" class="form-control">
-            <input type="text" placeholder="Enter your name">
-            <input type="email" placeholder="Enter your email">
+        <h1><a href="http://facebook.com" target="_self">Go to google</a></h1>
+        <form action="" class="Form-Control">
+            <input type="text" placeholder="Enter your Name">
+            <input type="email" placeholder="Enter your E-Mail">
             <input type="password" placeholder="Enter your password">
-            <input type="submit" value="Submit">
+            <input type="submit" placeholder="Submit">
         </form>
         <ul>
-            <li class="item" id="item-1">Item1</li>
-            <li class="item" id="item-2">Item2</li>
-            <li class="item" id="item-3">Item3</li>
-            <li class="item" id="item-4">Item4</li>
-            <li class="item" id="item-5">Item5</li>
-            <li class="item" id="item-6">Item6</li>
-            <li class="item" id="item-7">Item7</li>
-            <li class="item" id="item-8">Item8</li>
-            <li class="item" id="item-9">Item9</li>
-            <li class="item" id="item-10">Item10</li>
+            <li class="item" id="item-1">Item-1</li>
+            <li class="item" id="item-2">Item-2</li>
+            <li class="item" id="item-3">Item-3</li>
+            <li class="item" id="item-4">Item-4</li>
+            <li class="item" id="item-5">Item-5</li>
+            <li class="item" id="item-6">Item-6</li>
+            <li class="item" id="item-7">Item-7</li>
+            <li class="item" id="item-8">Item-8</li>
+            <li class="item" id="item-9">Item-9</li>
+            <li class="item" id="item-10">Item-10</li>
         </ul>
     </div>
 </body>
+
+</html>
