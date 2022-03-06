@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shawdow and Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding:23px 12px;
+            margin: 23px 12px;
+            border:2px solid black;
+            background-color: rgb(255, 230, 209);
+            box-shadow: 10px 13px 12px rgb(245, 95, 95);
+
+            /* box-shadow: (offset-x) (offset-y) color; */
+            /* box-shadow: 10px 13px green; */
+
+            /* box-shadow: -10px -13px green; */                                    /*-ve sign will produce shadow in upwards and left side*/
+
+            /* box-shadow: (offset-x) (offset-y) (blur-radius) color; */
+            /* box-shadow: 7px 5px 10px green;*/
+
+            /* box-shadow: (offset-x) (offset-y) (blur-radius) (spread-radius) color; */        
+            /* box-shadow: -7px -5px 10px 34px green; */
+
+            /* In his we have given color through rgb and alpha decides the darkness */
+            /* box-shadow: -7px -5px 10px 34px rgba(71, 172, 172, 0.5); */   
+
+
+            /* box-shadow: inset 3px 5px grey; */
+            /* This is to create a shadow inside the box */
+
+            /* box-shadow: 3px 5px grey, 4px 6px palegreen; */
+            /* This to combine both outside shadow and inside shadow */
+        }
+        .card h2{
+            text-shadow:2px 2px 3px #cab5b5 ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is C++ Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ratione dicta velit itaque, laboriosam similique atque molestias quod architecto dolorem ipsam? Veniam ipsum, provident alias aperiam sed in rem vitae, amet saepe ullam beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quam, ullam impedit quae quod ipsa nemo similique reiciendis animi exercitationem, nesciunt adipisci recusandae. </p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is Python Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis est quia maiores porro facilis culpa exercitationem ea tempora fuga quam officia voluptatum fugit, dolores ad sunt quas non harum sit aut nemo voluptates perspiciatis?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>This is HTML Course</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt ipsum culpa ratione, exercitationem recusandae magni pariatur quae neque, voluptates iusto eaque debitis? Facilis quos praesentium ad numquam unde consectetur nulla perspiciatis reprehenderit, porro officiis?</p>
+        </div>
+    </div>
+</body>
+</html>
