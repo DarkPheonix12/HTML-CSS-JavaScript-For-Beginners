@@ -4,10 +4,6 @@
     padding: 0;
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
 /* CSS Variables */
 :root{
     --navbar-height: 59px;
@@ -18,12 +14,42 @@ html{
     display: flex;
     align-items: center;
 }
-
-/* Navigation Bar: Logo and Image */
+/* Navigation Bar: Logo and image */
 #logo{
-    margin: 10px 34px;
+    margin: 2px -17px;
 }
 
 #logo img{
-    height: 59px;
-    margin: 3px 6px;
+    width: 102px;
+    margin: 4px 38px;
+}
+/* Navigation Bar: List Styling */
+#navbar ul{
+    display:flex;                                    /*The items of ul will arrange itself in Horzontal form*/
+}
+
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.6;
+}
+
+#navbar ul li{
+    list-style:none;                                 /*This will eliminate dots that have appeared in list*/
+    font-size: 1rem;
+}
+#navbar ul li a{                                     /*We have created this separately so that we can give padding to our navbar lements*/
+    color:snow; 
+    display: block;                                  /*Required to give padding*/
+    padding:3px 32px;
+    border-radius:20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{                                     
+    color:black; 
+    background-color: white;
+}
