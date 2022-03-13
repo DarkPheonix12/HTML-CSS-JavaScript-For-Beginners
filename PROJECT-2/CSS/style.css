@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html{                                               /*This enables the person to click options in navbar and reach at that point on webpage */
+    scroll-behavior: smooth;
+}
+
 /* CSS Variables */
 :root{
     --navbar-height: 59px;
@@ -13,8 +17,9 @@
 #navbar{
     display: flex;
     align-items: center;
-    position: relative;                            /*So that the navbar overlaps with background image*/
+    position: sticky;                            /*So that the navbar overlaps with background image*/
     top:0px;
+    opacity: 0.6;
 }
 
 #navbar::before{
@@ -83,12 +88,12 @@
 }
 
 #home h1{
-    color: azure;
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 
 #home p{
-    color: azure;
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 1rem;
 }
