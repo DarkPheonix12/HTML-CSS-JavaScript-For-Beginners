@@ -6,7 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Grid-2</title>
 </head>
+<style>
+    .grid{
+        display: grid;
+        grid-template-rows: 1fr 2fr 3fr;
+        grid-auto-rows:4fr ;
+        grid-template-columns: 1fr 4fr 2fr ;
+        /* grid-template-columns: repeat(9, 4fr); */       /*To repeat 4fr 9 times*/ 
+        grid-gap: 1rem;
+    }
+    .box{
+        background-color: peachpuff;
+        border: 2px solid black;
+    }
+</style>
 <body>
-    
+    <div class="grid">
+        <div class="box">This is box-1</div>
+        <div class="box">This is box-2</div>
+        <div class="box">This is box-3</div>
+        <div class="box">This is box-4</div>
+        <div class="box">This is box-5</div>
+        <div class="box">This is box-6</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-9</div>
+        <div class="box">This is box-10</div>
+    </div>
 </body>
 </html>
