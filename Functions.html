@@ -12,14 +12,32 @@
         This is a container
     </div>
     <script>
-        let name='Aman';
+        let name1='Aman';
         let name2='Mayank';
         let name3='Vaibhav';
         let name4='Rohan';
-        console.log('name'+'Is a good boy');
-        console.log('name2'+'Is a good boy');
-        console.log('name3'+'Is a good boy');
-        console.log('name4'+'Is a good boy');
+        // console.log('name1'+'Is a good boy');
+        // console.log('name2'+'Is a good boy');
+        // console.log('name3'+'Is a good boy');
+        // console.log('name4'+'Is a good boy');                      //Instead of this you can do it other way given below by creating a function
+
+        function greet(name, greetxt='Greetings from Aman'){          // Here we have given greetxt a default value which will only apply if you don't prove the command line with global greetxt value
+            console.log(name+' is a good boy');                       //Don't forget to put a sapce
+        }
+        let greetxt="Good Morning";
+        greet(name1, greetxt);
+        greet(name4, greetxt);
+        greet(name2, greetxt);
+        greet(name3);
+        // let returnVal=greet(name3);                                   // This will not generate any output but just "Undefined" because it has no kind of mech to return value
+
+        function sum(a,b,c){
+            let d = a + b + c;
+            return d;                                                    // A function gets over at return. It will not run any command written after "return"
+        }
+
+        let returnVal = sum(1,8,3);
+        console.log(returnVal)                                       //This the value we got in return
     </script>
     
 </body>
