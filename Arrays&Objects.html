@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <dic class="container">Simple command to be printed</dic>
+    <script>
+        let myVar = 34;
+        let myVar2 = "string";
+        let myVar3 = true;
+        let myVar4 = null;
+        let myVar5 = undefined;
+
+        //Creation of object
+        let employee = {                             // To search it in Console type --> employee.name / employee.Degree
+            name: 'Aman',                            // But for Degree 2 you cant use it, at that time you'll have to use --> employee["Degree 2"]
+            age: 18,
+            Degree1: 'Graduation',
+            "Degree 2": 'Graduation',
+            College: '________'
+        }
+        console.log(employee) 
+
+        //Creation of Array(Special type of object)
+        let data = [34, 12, 45, "Aman", undefined];       // or you can use --> new Array()
+        console.log(data[1]);
+        console.log(data.length);
+        data=data.sort();                                 // This arranges data from ascending to decending
+        data.push('Ram');
+        console.log(data);
+
+        let data1 = new Array(23);                        // This will create a Array with 23 empty elements 
+        console.log(data1)
+        </script>
+</body>
+</html>
