@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using alert, confirm and prompt</title>
+</head>
+<body>
+    <div class="container">
+        This is a container
+    </div>
+
+    <script>
+        //Alert in browser Javascript 
+        alert("This is a message");                            //Does not return anything --> undefined return value
+
+        //Prompt in JS
+        let name = prompt('What is your Name??','');           // '' is what you want to suggest as default, here the default is nothing
+        console.log(name);
+
+        let deletepost = confirm("Do you really want to delete this post??");
+        if(deletepost){
+            // Code to delete the post
+            console.log("Your post has been deleted successfully");
+        }
+        else{
+            // Code to cancel deletion of the post       
+            console.log("Your post has not been deleted");
+        }
+
+        //Takes care of age for enterance to a website
+        let age = confirm("Are you 18+");
+        if(age){
+            // Code to enter website
+            console.log("Enter website");
+        }
+        else{
+            // Code to stop from entering
+            console.log("Don't enter the website");
+        }
+    </script>
+</body>
+</html>
