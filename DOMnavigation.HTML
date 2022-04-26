@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>   
+    <!-- DOM is Data Object Manipulation -->
+</head>
+<body>
+    <div id ="main" class="CONTAINER">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Cotact Us</li>
+            <li>Services</li>
+        </ul>
+    </div>
+    <div class="CONTAINER">
+        Another Container
+    </div>
+    <script>
+        let main= document.getElementById('main');
+        console.log(main); 
+        let nav=document.getElementById('nav');
+        console.log(nav);
+
+        let CONTAINERS = document.getElementsByClassName('CONTAINER');
+        console.log(CONTAINERS);
+
+        let sel = document.querySelector('#nav');           //To select pseudoselectors
+        console.log("selecotr returns", sel);
+    </script>
+</body>
+</html>
