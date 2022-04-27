@@ -65,3 +65,9 @@ const server = http.createServer((req, res) => {
 // server.listen(port, hostname, () => {
 //   console.log(`Server running at http://${hostname}:${port}/`);
 // });
+
+
+//I f you assign a value to a variable and then press '_' then it returns the value of the recent variable assigned with value
+//>a=34
+//>_
+//>
