@@ -15,8 +15,8 @@ const server = http.createServer((req, res)=>{
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/html');
 
-    if(url == '/'){
-    res.end(home);
+    if(url == '/'){                //WE'll not be using this manual if-else statement for backen
+    res.end(home);                 //perhaps we'll be using module (Express)
     }
     else if(url == '/about'){
     res.end(about);
