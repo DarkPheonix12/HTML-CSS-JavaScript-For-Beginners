@@ -14,7 +14,7 @@ app.set('views', path.join(__dirname, 'views')) // Set the views directory
 // ENDPOINTS
 app.get('/', (req, res)=>{                                                                //This is the nedpoint we have given 
     const con = "This is the best content on the internet so far so use it wisely"        // Contents of the endpoints
-    const params = {'title': 'PubG is the best game', "content": con}                     //Remember this format to execute the contents of endpoints
+    const params = {'title': 'PubG is the best game', "content": con}                     //Remember this format to execute the codes
     res.status(200).render('index.pug', params);
 })
 
